@@ -329,11 +329,12 @@
             const name = card.querySelector('.mem-name').value;
             const relation = card.querySelector('.mem-relation').value;
             const age = card.querySelector('.mem-age').value; 
+            const dob = card.querySelector('.mem-dob').value;
             const gender = card.querySelector('.mem-gender').value;
             
-            // Format: "Name (Relation, Age yrs, Gender)"
+            // Format: "Name (Relation, Age yrs, DOB, Gender)"
             if(name) {
-                familyData.push(`${name} (${relation}, ${age} yrs, ${gender})`);
+                familyData.push(`${name} (${relation}, ${age} yrs, ${dob}, ${gender})`);
             }
         });
         document.getElementById('finalFamilyData').value = familyData.join(" | ");
